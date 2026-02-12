@@ -15,7 +15,7 @@ const items = [
   { photo: "photos/IMG_4205.jpeg", quote: "With you, everything feels better." },
   { photo: "photos/IMG_4280.jpeg", quote: "I choose you, every day." },
   { photo: "photos/RAM08220.jpg", quote: "My happy place is with you." },
-  { photo: "photos/_73A9167.JPG", quote: "Forever us ❤️" }
+  { photo: "photos/_73A9167.JPG", quote: "Forever us ❤️" },
 ];
 
 let i = 0;
@@ -30,7 +30,7 @@ yes.addEventListener("click", () => {
   question.classList.add("hidden");
   result.classList.remove("hidden");
 
-  // start floating animation
+  // float only after clicking Yes
   result.classList.add("floating");
 
   i = 0;
