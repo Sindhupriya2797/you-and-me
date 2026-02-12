@@ -8,14 +8,14 @@ body {
 }
 
 /* container card */
-.wrap.floating {
-  animation: floatCard 4s ease-in-out infinite;
+.wrap {
+  text-align: center;
+  padding: 32px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-@keyframes floatCard {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
-}
 
 
 /* romantic heading */
@@ -71,3 +71,12 @@ button:hover {
 .share a {
   color: #444;
 }
+.wrap.floating {
+  animation: floatCard 4s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
