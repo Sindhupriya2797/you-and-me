@@ -10,10 +10,13 @@ const nextBtn = document.getElementById("next");
 const shareLink = document.getElementById("shareLink");
 
 const items = [
-  { photo: "photos/1.jpg", quote: "You are my favorite person." },
-  { photo: "photos/2.jpg", quote: "With you, everything feels better." },
-  { photo: "photos/3.jpg", quote: "I choose you, every day." },
+  { photo: "photos/IMG_4069.jpeg", quote: "You are my favorite person." },
+  { photo: "photos/IMG_4205.jpeg", quote: "With you, everything feels better." },
+  { photo: "photos/IMG_4280.jpeg", quote: "I choose you, every day." },
+  { photo: "photos/RAM08220.jpg", quote: "My happy place is with you." },
+  { photo: "photos/_73A9167.JPG", quote: "Forever us ❤️" }
 ];
+
 //
 
 let i = 0;
