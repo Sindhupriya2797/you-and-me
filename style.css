@@ -5,43 +5,39 @@ body {
   min-height: 100vh;
   display: grid;
   place-items: center;
+  padding: 24px;
 }
 
-/* container card */
+.hidden {
+  display: none;
+}
+
+/* Card */
 .wrap {
   text-align: center;
   padding: 32px;
-  background: white;
+  background: #ffffff;
   border-radius: 18px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  width: min(520px, 92vw);
 }
 
-
-
-/* romantic heading */
+/* Headings */
 h1 {
   font-family: "Playfair Display", serif;
   font-size: 52px;
-  margin-bottom: 10px;
+  margin: 0 0 12px;
 }
 
-/* quote text */
-#quote {
-  color: #555;
-  font-size: 18px;
-  margin-bottom: 18px;
+/* Buttons row */
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
 }
 
-/* image styling */
-#photo {
-  width: 320px;
-  max-width: 90vw;
-  border-radius: 16px;
-  margin: 12px 0;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-/* button */
+/* Buttons */
 button {
   border: none;
   border-radius: 999px;
@@ -49,34 +45,65 @@ button {
   font-size: 18px;
   cursor: pointer;
   background: #ff6b81;
-  color: white;
-  transition: 0.25s ease;
+  color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(255,107,129,0.4);
+  box-shadow: 0 6px 14px rgba(255, 107, 129, 0.4);
+  background: #ff7e91;
 }
 
-.hidden {
-  display: none;
+#no {
+  background: #ff9aa8;
 }
 
-/* share link */
+#no:hover {
+  background: #ffb2bd;
+}
+
+/* Quote */
+#quote {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 10px 0 16px;
+}
+
+/* Photo */
+#photo {
+  width: 320px;
+  max-width: 90vw;
+  border-radius: 16px;
+  margin: 10px 0 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Share */
 .share {
   margin-top: 14px;
   font-size: 14px;
+  color: #444;
 }
 
 .share a {
   color: #444;
+  text-decoration: underline;
+  word-break: break-word;
 }
+
+/* Floating only after Yes */
 .wrap.floating {
   animation: floatCard 4s ease-in-out infinite;
 }
 
 @keyframes floatCard {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-6px); }
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
 }
-
