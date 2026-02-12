@@ -14,6 +14,7 @@ const items = [
   { photo: "photos/2.jpg", quote: "With you, everything feels better." },
   { photo: "photos/3.jpg", quote: "I choose you, every day." },
 ];
+//
 
 let i = 0;
 
