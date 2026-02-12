@@ -35,8 +35,14 @@ no.addEventListener("mouseover", () => {
 yes.addEventListener("click", () => {
   question.classList.add("hidden");
   result.classList.remove("hidden");
+
+  // start floating animation
+  result.classList.add("floating");
+
   i = 0;
   showItem(i);
+});
+
 
   const url = window.location.href;
   shareLink.textContent = url;
