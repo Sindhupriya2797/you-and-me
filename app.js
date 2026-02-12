@@ -15,7 +15,7 @@ const items = [
   { photo: "photos/IMG_4205.jpeg", quote: "With you, everything feels better." },
   { photo: "photos/IMG_4280.jpeg", quote: "I choose you, every day." },
   { photo: "photos/RAM08220.jpg", quote: "My happy place is with you." },
-  { photo: "photos/_73A9167.JPG", quote: "Forever us ❤️" },
+  { photo: "photos/RAM08912.jpg", quote: "Forever us ❤️" },
 ];
 
 let i = 0;
